@@ -26,10 +26,15 @@ body {
     border-radius: 5px;
 }
 
+/* FIX: Proper grid for buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
 .buttons button {
-    width: 55px;
     height: 55px;
-    margin: 5px;
     font-size: 18px;
     cursor: pointer;
     border: none;
@@ -51,6 +56,8 @@ body {
     background: #45a049 !important;
 }
 
+/* Make 0 button wider */
 .zero {
-    width: 118px;
+    grid-column: span 2;
 }
+
